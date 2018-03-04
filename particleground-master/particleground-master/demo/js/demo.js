@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     directionY: 'up'
   });
   var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+  intro.style.marginTop = - (intro.offsetHeight+200) +'px';
 }, false);
 
 
