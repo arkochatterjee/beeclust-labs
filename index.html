@@ -159,6 +159,285 @@ body {
 
         </style>
     </head>
+
+
+
+
+
+
+        <style>
+        .at-section__title {
+          margin: 0 0 70px;
+          color: #000;
+          font-family: 'Roboto', sans-serif;
+          font-size: 3.5rem;
+          font-weight: 300;
+          line-height: 2.625rem;
+          text-align: center;
+        }
+        .at-grid {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          background: #FFF;
+          border: 1px solid #E2E9ED;
+        }
+        .at-grid[data-column="1"] .at-column {
+          width: 100%;
+          max-width: 100%;
+          min-width: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+        }
+        .at-grid[data-column="2"] .at-column {
+          width: 50%;
+          max-width: 50%;
+          min-width: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+        }
+        .at-grid[data-column="3"] .at-column {
+          width: 33.33333%;
+          max-width: 33.33333%;
+          min-width: 33.33333%;
+          -ms-flex-preferred-size: 33.33333%;
+              flex-basis: 33.33333%;
+        }
+        .at-grid[data-column="4"] .at-column {
+          width: 25%;
+          max-width: 25%;
+          min-width: 25%;
+          -ms-flex-preferred-size: 25%;
+              flex-basis: 25%;
+        }
+        .at-grid[data-column="5"] .at-column {
+          width: 20%;
+          max-width: 20%;
+          min-width: 20%;
+          -ms-flex-preferred-size: 20%;
+              flex-basis: 20%;
+        }
+        .at-grid[data-column="6"] .at-column {
+          width: 16.66667%;
+          max-width: 16.66667%;
+          min-width: 16.66667%;
+          -ms-flex-preferred-size: 16.66667%;
+              flex-basis: 16.66667%;
+        }
+        .at-grid[data-column="7"] .at-column {
+          width: 14.28571%;
+          max-width: 14.28571%;
+          min-width: 14.28571%;
+          -ms-flex-preferred-size: 14.28571%;
+              flex-basis: 14.28571%;
+        }
+        .at-grid[data-column="8"] .at-column {
+          width: 12.5%;
+          max-width: 12.5%;
+          min-width: 12.5%;
+          -ms-flex-preferred-size: 12.5%;
+              flex-basis: 12.5%;
+        }
+        .at-grid[data-column="9"] .at-column {
+          width: 11.11111%;
+          max-width: 11.11111%;
+          min-width: 11.11111%;
+          -ms-flex-preferred-size: 11.11111%;
+              flex-basis: 11.11111%;
+        }
+        .at-column {
+          z-index: 0;
+          position: relative;
+          background: #FFF;
+          box-shadow: 0 0 0 1px #E2E9ED;
+          padding: 10px;
+          box-sizing: border-box;
+          -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+          transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+          transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
+          transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+        }
+        .at-column:before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+        .at-column:hover {
+          z-index: 1;
+          box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+          -webkit-transform: scale(1.05);
+                  transform: scale(1.05);
+          -webkit-transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+          transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+          transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+          transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+        }
+        .at-column:hover .at-social {
+          margin: 16px 0 0;
+          opacity: 1;
+        }
+        @media (max-width: 800px) {
+          .at-column {
+            width: 50% !important;
+            max-width: 50% !important;
+            min-width: 50% !important;
+            -ms-flex-preferred-size: 50% !important;
+                flex-basis: 50% !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .at-column {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-width: 100% !important;
+            -ms-flex-preferred-size: 100% !important;
+                flex-basis: 100% !important;
+          }
+        }
+        .at-user {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          -webkit-transform: translate(0, -50%);
+                  transform: translate(0, -50%);
+          text-align: center;
+        }
+        .at-user__avatar {
+          width: 152px;
+          height: 152px;
+          border-radius: 100%;
+          margin: 0 auto 20px;
+          overflow: hidden;
+        }
+        .at-user__avatar img {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+        }
+        .at-user__name {
+          color: #313435;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 2.625rem;
+        }
+        .at-user__title {
+          color: #6F808A;
+          font-family: 'Roboto', sans-serif;
+          font-size: 0.875rem;
+          line-height: 2.375rem;
+        }
+        .at-social {
+          margin: 0 0 -18px;
+          opacity: 0;
+          -webkit-transition: margin 0.2s ease, opacity 0.2s ease;
+          transition: margin 0.2s ease, opacity 0.2s ease;
+        }
+        .at-social__item {
+          display: inline-block;
+          margin: 0 10px;
+        }
+        .at-social__item a {
+          display: block;
+        }
+        .at-social__item svg {
+          fill: #515F65;
+          display: block;
+          height: 18px;
+          -webkit-transition: fill 0.2s ease;
+          transition: fill 0.2s ease;
+        }
+        .at-social__item svg:hover {
+          fill: #788D96;
+        }
+        .k {
+            list-style-type: none;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            font-family: montserrat;
+        }
+        .s {
+            float: left;
+        }
+        .s a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .s a:hover {
+            background-color: #2c78a2;
+            color: white;
+            text-decoration: none;
+        }
+        .s .selected {
+            background-color: #2c78a2;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .s .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1; color: black;}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .domain a{
+          padding: 9px;
+        }
+        .bordered {
+          padding: 50px;
+        }
+
+
+        .containercore {
+          max-width: 1170px;
+          width: 100%;
+          margin: 100px auto;
+          padding: 0 20px;
+          box-sizing: border-box;
+          -webkit-transform-origin: top center;
+                  transform-origin: top center;
+          -webkit-transform: scale(0.8);
+                  transform: scale(0.8);
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+           }
+
+
+
+    </style>
     <!-- END HEAD -->
 
     <!-- BODY -->
@@ -262,8 +541,7 @@ body {
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
                         <div class="margin-b-60">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p></p>
+                                <p>Beeclust Labs is a research group based in SRM University, Chennai, India. The team focuses on the field of Swarm Robotics and Swarm Intelligence. At present,Beeclust Lab is developing mobile printing solutions using swarm technology.</p>
                         </div>
 
                         <!-- Progress Box --
@@ -364,7 +642,7 @@ body {
         </div>
         <!-- End Experience -->
 
-        <!-- Work -->
+        <!-- Work --
         <div id="project">
             <div class="container content-lg">
                 <div class="row">
@@ -375,11 +653,11 @@ body {
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
-                        <!-- Masonry Grid -->
+                        <!-- Masonry Grid --
                         <div class="masonry-grid row row-space-2">
                             <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
-                                <!-- Work -->
+                                <!-- Work --
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
                                         <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
@@ -415,10 +693,10 @@ body {
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Work -->
+                                <!-- End Work --
                             </div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                                <!-- Work -->
+                                <!-- Work --
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
                                         <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
@@ -454,10 +732,10 @@ body {
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Work -->
+                                <!-- End Work --
                             </div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                                <!-- Work -->
+                                <!-- Work --
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
                                         <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
@@ -493,10 +771,10 @@ body {
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Work -->
+                                <!-- End Work --
                             </div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                                <!-- Work -->
+                                <!-- Work --
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
                                         <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
@@ -532,10 +810,10 @@ body {
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Work -->
+                                <!-- End Work --
                             </div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                                <!-- Work -->
+                                <!-- Work --
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
                                         <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
@@ -585,84 +863,101 @@ body {
         <div id="team">
 
 
-
-          <div class="container">
-
-                    <div class="row">
-                        <div class="heading-title text-center">
-                            <h3 class="text-uppercase">Our Team</h3>
-
-                        </div>
-
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team-member">
-                                <div class="team-img">
-                                    <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
-                                </div>
-                                <div class="team-hover">
-                                    <div class="desk">
-                                        <h4>Hi There !</h4>
-                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
-                                    </div>
-                                    <div class="s-link">
-                                      <a href=" https://www.facebook.com/imprintssc/" class="social-icons" target="_blank"><i class="icon-social-facebook"></i></a>
-                                      <a href="https://www.instagram.com/imprint.literarysociety/" class="social-icons" target="_blank"><i class="icon-social-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-title">
-                                <h5>Martin Smith</h5>
-                                <span>founder &amp; ceo</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team-member">
-                                <div class="team-img">
-                                    <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
-                                </div>
-                                <div class="team-hover">
-                                    <div class="desk">
-                                        <h4>Hello World</h4>
-                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
-                                    </div>
-                                    <div class="s-link">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-title">
-                                <h5>Franklin Harbet</h5>
-                                <span>HR Manager</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team-member">
-                                <div class="team-img">
-                                    <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
-                                </div>
-                                <div class="team-hover">
-                                    <div class="desk">
-                                        <h4>I love to design</h4>
-                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
-                                    </div>
-                                    <div class="s-link">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-title">
-                                <h5>Linda Anderson</h5>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-
-                    </div>
+          <div class="containercore" style="margin-top:30px;" >
+                <h2 align="center" style="margin-top:0px;"><br>Advisors</h2>
+            <div class="at-grid" data-column="2">
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Dr. S. Dhanalakshmi</h3>
+                  <p>Asst. Professor(Selection Grade), Department of Electronics and Communication</p>
+                  <p>SRM IST, Chennai</p>
 
                 </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Dr. Lorenzo Sabattini</h3>
+                  <p>Asst. Professor, DISMI</p>
+                  <p>University of Modena and Reggio Emilia, Italy</p>
+
+                </div>
+              </div>
+
+            </div>
+              <h2 align="center" style="margin-top:0px;"><br>Student Members</h2>
+              <div class="at-grid" data-column="3">
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Kedar Prasad Karpe</h3>
+                  <p>Team Principle</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Shruti Vidya</h3>
+                  <p>Motor Control</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png" /></div>
+                  <h3>Shantam Tandon</h3>
+                  <p>Sensor Design</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Amrit Das</h3>
+                  <p>Image Processing</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Parth Tandon</h3>
+                  <p>Hardware and Mechanical Design</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Ayon Chatterjee</h3>
+                  <p>Mechanical Design</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Kapil Kothari</h3>
+                  <p>Image Processing and UI</p>
+
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="img/Logo_Bottom.png"/></div>
+                  <h3>Rohan Giri</h3>
+                  <p>PCB Design and Hardware Fabrication</p>
+
+                </div>
+              </div>
+
+
+
+          </div>
+
+          </div>
 
 
         </div>
@@ -704,18 +999,36 @@ body {
                 </div>
             </div>
         </div>
+
+
+            <div id="intro" style="background:black">
+                <h3 align="center" style="margin-top:5px;"><font color="ffffff">FOLLOW US</font></h3>
+          <hr color='black' width=200px>
+          <ul class="list-inline">
+                     <li><a href="#" class="social-icons" target="_blank"><i class="icon-social-facebook"></i></a></li>
+                     <li><a href="#" class="social-icons" target="_blank"><i class="icon-social-instagram"></i></a></li>
+                     <li><a href="#" class="social-icons"><i class="icon-social-dribbble" target="_blank"></i></a></li>
+
+
+                 </ul>
+
+                 </div>
+
         <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
 
         <!--========== FOOTER ==========-->
         <footer class="footer">
+
             <div class="content container">
+
+
                 <div class="row">
                     <div class="col-xs-6">
                       <!--  <img class="footer-logo" src="img/logo-dark.png" alt="Aircv Logo"> -->
                     </div>
                     <div class="col-xs-6 text-right sm-text-left">
-                        <p class="margin-b-0"><font color="000000">&lt;/&gt; by Arko Chatterjee<br>arkochatterjee.github.io</font></p>
+                        <p class="margin-b-0"><font color="ffffff">&lt;/&gt; by Arko Chatterjee<br>arkochatterjee.github.io</font></p>
                     </div>
                 </div>
                 <!--// end row -->
